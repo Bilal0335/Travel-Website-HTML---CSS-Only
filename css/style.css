@@ -35,6 +35,11 @@ h3 {
 }
 
 /* ! Utility class */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
 .lg-heading {
   font-size: 3.5rem;
 }
@@ -54,8 +59,6 @@ h3 {
   color: #555555;
 }
 
-
-
 .header {
   height: 92vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -65,7 +68,6 @@ h3 {
   background-position: center;
 }
 .navbar {
-  border: 2px solid white;
   padding: 1rem;
 }
 .header .logo,
@@ -81,8 +83,14 @@ h3 {
 }
 
 .navbar a:link,
-.navbar a:visited{
-    color: #f4f4f4;
+.navbar a:visited {
+  color: #f4f4f4;
+}
+.navbar a {
+  padding-bottom: 0.3rem;
+}
+.navbar a:hover {
+  border-bottom: 2px solid #fff;
 }
 .navbar::after {
   content: "";
