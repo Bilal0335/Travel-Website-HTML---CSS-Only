@@ -370,5 +370,27 @@ row::after {
   letter-spacing: 0.5rem;
 }
 
-/* Co\ntacty form */
+/* Contacty form */
+.cotact-form {
+  padding: 5rem 0;
+  font-size: 2rem;
+}
+.form-wrapper {
+  border: 2px solid red;
+}
 
+.form-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.company-address {
+  border: 4px dotted green;
+  width: 49%;
+  float: left;
+}
+.form {
+  border: 4px dotted black;
+  width: 49%;
+  float: right;
+}
