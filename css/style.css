@@ -262,16 +262,11 @@ row::after {
 .about {
   padding: 5rem 0;
 }
-/* .about-line{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border-bottom:6px solid red;
-} */
 .about-line::after {
   content: "";
   display: block;
   border-radius: 20em;
+  border: 3px solid #e63946;
   width: 100%;
 }
 /* aboutr wrapper styling */
@@ -344,6 +339,7 @@ row::after {
   display: block;
   content: "";
   clear: both;
+  /* border: 3px solid red; */
 }
 .box-conatiner {
   margin: 1rem 2rem auto;
@@ -371,9 +367,10 @@ row::after {
 }
 
 /* Contacty form */
-.cotact-form {
+.contact-form {
   padding: 5rem 0;
-  background: #f7f7f7;
+  background: #f4f4f4;
+
 }
 .form-wrapper::after {
   content: "";
@@ -381,7 +378,6 @@ row::after {
   clear: both;
 }
 .form-wrapper .company-address {
-  border: 4px dotted green;
   width: 49%;
   float: left;
   background: #fff;
@@ -403,7 +399,6 @@ row::after {
   display: inline-block;
   margin-right: 1rem;
   font-size: 2rem;
-  /* margin-left:1rem; */
 }
 .form-wrapper .company-address h2 {
   display: inline-block;
@@ -411,7 +406,6 @@ row::after {
 }
 /* form styling */
 .form-wrapper .form {
-  border: 4px dotted black;
   width: 49%;
   font-size: 1.6rem;
   float: right;
@@ -444,7 +438,7 @@ row::after {
 .form-wrapper .form textarea {
   width: 100%;
   padding: 1rem;
-  height: 320px;
+  height: 300px;
 }
 .form-btn{
   display: block;
