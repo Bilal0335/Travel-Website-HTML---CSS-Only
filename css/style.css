@@ -339,7 +339,6 @@ row::after {
   display: block;
   content: "";
   clear: both;
-  /* border: 3px solid red; */
 }
 .box-conatiner {
   margin: 1rem 2rem auto;
@@ -349,15 +348,14 @@ row::after {
 }
 .about-box .box-conatiner .left {
   float: left;
-  margin-top: 15px;
+  padding-top: 1.4em;
 }
 .about-box .box-conatiner .right {
   float: right;
   border: 2px solid white;
-  padding: 5px;
-  margin: 5px;
+  padding: 0.5em;
+  margin: 0.5em;
   text-align: center;
-  width: 30%;
 }
 .about-box .box-conatiner a {
   text-align: center;
@@ -370,7 +368,6 @@ row::after {
 .contact-form {
   padding: 5rem 0;
   background: #f4f4f4;
-
 }
 .form-wrapper::after {
   content: "";
@@ -383,7 +380,6 @@ row::after {
   background: #fff;
   padding-left: 1rem;
   height: 760px;
-
 }
 .form-wrapper .address-group {
   margin-bottom: 2rem;
@@ -440,7 +436,7 @@ row::after {
   padding: 1rem;
   height: 300px;
 }
-.form-btn{
+.form-btn {
   display: block;
   margin: 0 auto;
   outline: none;
@@ -451,5 +447,143 @@ row::after {
   font-size: 1.8rem;
   cursor: pointer;
   text-transform: capitalize;
+}
+/* ! media quer */
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar .nav-items,
+  .navbar .logo {
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .container .row {
+    width: 100%;
+    height: auto;
+  }
+  .container .text-box,
+  .container .img-box {
+    width: 100%;
+    float: none;
+  }
+  .features .box {
+    width: 100%;
+    float: none;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.51);
+    padding: 2em;
+  }
+  .features .box-2,
+  .features .box-3 {
+    margin-top: 7rem;
+  }
+  .box-wrapper {
+    box-shadow: none;
+  }
+  .footer {
+    display: block;
+    width: 100%;
+  }
+  .left,
+  .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .form-wrapper .company-address {
+    float: none;
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+    margin-bottom: 5rem;
+  }
+  .form-wrapper .form {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-top: 1em;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  .navbar .nav-items,
+  .navbar .logo {
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .container .row {
+    width: 100%;
+    height: auto;
+  }
+  .container .text-box,
+  .container .img-box {
+    width: 100%;
+    float: none;
+  }
+  .features .box {
+    width: 100%;
+    float: none;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.51);
+    padding: 2em;
+  }
+  .features .box-2,
+  .features .box-3 {
+    margin-top: 7rem;
+  }
+  .box-wrapper {
+    box-shadow: none;
+  }
+  .footer {
+    display: block;
+    width: 100%;
+  }
+  .left,
+  .right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .form-wrapper .company-address {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 5rem;
+  }
+  .form-wrapper .form {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-top: 1em;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 56.29%;
+  }
+  .row .text-box h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}
 
+
+@media (orientation:landscape) and(max-height:500px){
+  .header{
+    height: 90vmax;
+  }
 }
